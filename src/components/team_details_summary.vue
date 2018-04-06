@@ -31,7 +31,7 @@
 		},
 		created() {
 			let vm = this;
-			axios.get('http://localhost:3000/teamdetails?team_id=' + this.$route.params.id)
+			axios.get('http://39.108.118.110/teamdetails?team_id=' + this.$route.params.id)
 				.then(function(data) {
 					vm.summary = data.data.data;
 				})

@@ -23,7 +23,7 @@
     },
     created() {
       let vm = this;
-      axios.get('http://localhost:3000/schedule1')
+      axios.get('http://39.108.118.110/schedule1')
         .then(function (data) {
           vm.msg = data.data.data;
         })
@@ -34,7 +34,7 @@
     methods: {
       change(msg) {
         let vm=this;
-        axios.get('http://localhost:3000/schedule'+msg)
+        axios.get('http://39.108.118.110/schedule'+msg)
           .then(function (data) {
             vm.msg=data.data.data;
           })

@@ -17,7 +17,7 @@
 		},
 		created(){
 			let vm=this;
-			axios.get('http://localhost:3000/team')
+			axios.get('http://39.108.118.110/team')
 				 .then(function  (data) {
 				 	vm.msg=data.data.data;
 				 })
