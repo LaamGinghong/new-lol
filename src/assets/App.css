@@ -131,6 +131,7 @@ a:visited {
   height: 120px;
   padding: 4px 0;
   position: absolute;
+  z-index: 100;
   left: 0;
   background: white;
 }
@@ -143,6 +144,44 @@ a:visited {
   padding-left: 20px;
   padding-right: 120px;
   color: #262626;
+}
+
+#nav_dropdown_mobile {
+  display: none;
+}
+
+.nav_btn {
+  display: none;
+}
+
+#nav_logo_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav_item {
+    display: none;
+  }
+
+  #nav_logo_mobile {
+    display: inline-block;
+    padding-left: 10px;
+    position: relative;
+    z-index: 80;
+  }
+
+  .nav_btn {
+    display: inline-block;
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    right: 10px;
+  }
+
+  #nav_dropdown_mobile {
+    display: block;
+    position: absolute;
+  }
 }
 
 .divider {
@@ -332,6 +371,21 @@ a:visited {
 
 .team_list_item_logo {
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .team_list_item {
+    width: 140px;
+    height: 120px;
+  }
+
+  .team_list_item img {
+    width: 60px;
+  }
+
+  .team_list_item_logo {
+    margin-top: 10px;
+  }
 }
 
 .team_list_item:hover {
@@ -605,6 +659,7 @@ a:visited {
   font-weight: 700;
   margin-top: 30px;
   cursor: pointer;
+  background: white;
 }
 
 .schedule_nav_item {
@@ -766,11 +821,13 @@ a:visited {
   border-top: 1px solid #505050;
   border-bottom: 1px solid #505050;
 }
+
 #game {
   background: url("/static/img/data_bg.jpg");
   clear: both;
   height: 1800px;
 }
+
 .game_table_item {
   height: 120px;
   line-height: 120px;
@@ -789,17 +846,21 @@ a:visited {
   font-weight: 700;
   color: #d7461a;
 }
-.game_table_item_pick{
+
+.game_table_item_pick {
   border-radius: 50%;
   margin-top: 30px;
 }
-.game_table_item_cs{
+
+.game_table_item_cs {
   color: #CEA04A;
 }
-.game_table_icon{
+
+.game_table_icon {
   width: 34px;
   height: 122px;
 }
+
 .game_button {
   width: 210px;
   height: 60px;
@@ -825,4 +886,67 @@ a:visited {
   background: #c49f58;
   color: white;
   font-weight: 500;
+}
+
+#legends_top li {
+  float: left;
+}
+
+#legends_top span {
+  display: block;
+}
+
+#legends_top img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.top_msg > li {
+  margin-top: 120px;
+}
+
+#legends_top > ul > li > ul > li {
+  height: 155px;
+  position: relative;
+}
+
+#legends_top i {
+  background: url("../../static/img/border.png");
+  display: inline-block;
+  position: absolute;
+  width: 156px;
+  height: 211px;
+  left: 0;
+  top: -24px;
+}
+
+.top_name {
+  margin-top: 50px;
+  color: #666666;
+  margin-bottom: 10px;
+  font-size: 14px;
+  background: url("../../static/img/teamBorder.png");
+  display: block;
+  height: 31px;
+  line-height: 31px;
+  width: 138px;
+}
+
+.top_name > span {
+  color: #c49f58;
+  margin-left: 15px;
+}
+
+.top_percent {
+  font-size: 18px;
+  color: #c49f58;
+  font-weight: bold;
+}
+
+.top_title span {
+  margin-top: 40px;
+  margin-left: 40px;
+  color: #787878;
+  font-weight: 700;
+  font-size: 18px;
 }

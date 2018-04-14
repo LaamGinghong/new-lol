@@ -1,11 +1,11 @@
 <template>
 	<div id="nav_left_dropdown">
 		<ul>
-			<li class="nav_dropdown_item">战队数据</li>
+			<router-link v-bind:to="'/team'"><li class="nav_dropdown_item">战队数据</li></router-link>
 			<li class="divider"></li>
-			<li class="nav_dropdown_item">选手数据</li>
+			<router-link v-bind:to="'/player'"><li class="nav_dropdown_item">选手数据</li></router-link>
 			<li class="divider"></li>
-			<li class="nav_dropdown_item">英雄数据</li>
+			<router-link v-bind:to="'/legends'"><li class="nav_dropdown_item">英雄数据</li></router-link>
 		</ul>
 	</div>
 </template>
