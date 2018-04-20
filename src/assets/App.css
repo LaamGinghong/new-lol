@@ -441,6 +441,31 @@ a:visited {
   padding-top: 32px;
 }
 
+@media (max-width: 768px) {
+  .team_details_summary {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .team_details_summary img {
+    width: 200px;
+    height: auto;
+    padding-left: 84px !important;
+  }
+
+  .team_details_shortname {
+    margin-top: 0 !important;
+  }
+
+  .team_details_teamsummary {
+    padding-top: 0 !important;
+  }
+
+  #team_details_summary {
+    height: 550px;
+  }
+}
+
 #team_details_teammates_item {
   width: 260px;
   height: 240px;
@@ -491,6 +516,33 @@ a:visited {
   position: absolute;
   top: 3%;
   right: 5%;
+}
+
+@media (max-width: 768px){
+  #team_details_teammates_item{
+    width: 140px;
+    height: 120px;
+  }
+  #team_details_teammates_item:hover{
+    border: none;
+    background: #f4efe6;
+    padding: 0;
+  }
+  .team_details_image img{
+    width: 80px;
+    height: auto;
+    padding-top: 10px;
+  }
+  .team_details_image{
+    margin-bottom: 0;
+  }
+
+  .team_details_userid{
+    font-size: 14px;
+  }
+  .team_details_character{
+    display: none!important;
+  }
 }
 
 #team_details_data {
@@ -564,6 +616,11 @@ a:visited {
   margin-top: 21px;
 }
 
+@media (max-width: 768px){
+  #team_details_data,#team_details_schedule{
+    display: none;
+  }
+}
 .player_summary_userid {
   font-size: 100px;
   margin-top: 50px;
