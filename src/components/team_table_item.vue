@@ -127,6 +127,7 @@
     color: #c7beae;
     font-weight: bold;
     font-size: 15px;
+    overflow: auto;
   }
 
   .legends_table_item_active {

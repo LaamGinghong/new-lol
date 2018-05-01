@@ -76,4 +76,22 @@
     left: 0;
     top: -24px;
   }
+
+  @media (max-width: 768px) {
+    #team_top {
+      height: 300px !important;
+    }
+
+    #team_top i {
+      display: none;
+    }
+    #team_top img {
+      border-radius: 50%;
+      margin: 0;
+      margin-left: 20px;
+    }
+    #team_top > ul > li > ul > li {
+      height: 60px !important;
+    }
+  }
 </style>

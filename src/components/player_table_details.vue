@@ -1,6 +1,6 @@
 <template>
-  <div id="player_table_details">
-    <table class="container">
+  <div id="player_table_details" class="container">
+    <table class="container-flued">
       <tr v-for="(value,index) in message" v-show="turn(index)">
         <td class="text-center"><span>{{index+1}}</span></td>
         <td class="text-center">{{value.p_userid}}</td>
@@ -94,6 +94,7 @@
     font-weight: bold;
     font-size: 14px;
     border-bottom: 1px solid #1c1c1c;
+    overflow: auto;
   }
 
   #player_table_details span {

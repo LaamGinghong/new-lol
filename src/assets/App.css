@@ -518,30 +518,34 @@ a:visited {
   right: 5%;
 }
 
-@media (max-width: 768px){
-  #team_details_teammates_item{
+@media (max-width: 768px) {
+  #team_details_teammates_item {
     width: 140px;
     height: 120px;
   }
-  #team_details_teammates_item:hover{
+
+  #team_details_teammates_item:hover {
     border: none;
     background: #f4efe6;
     padding: 0;
   }
-  .team_details_image img{
+
+  .team_details_image img {
     width: 80px;
     height: auto;
     padding-top: 10px;
   }
-  .team_details_image{
+
+  .team_details_image {
     margin-bottom: 0;
   }
 
-  .team_details_userid{
+  .team_details_userid {
     font-size: 14px;
   }
-  .team_details_character{
-    display: none!important;
+
+  .team_details_character {
+    display: none !important;
   }
 }
 
@@ -616,11 +620,12 @@ a:visited {
   margin-top: 21px;
 }
 
-@media (max-width: 768px){
-  #team_details_data,#team_details_schedule{
+@media (max-width: 768px) {
+  #team_details_data, #team_details_schedule {
     display: none;
   }
 }
+
 .player_summary_userid {
   font-size: 100px;
   margin-top: 50px;
@@ -1006,4 +1011,43 @@ a:visited {
   color: #787878;
   font-weight: 700;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .top_msg img {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 0!important;
+  }
+
+  .top_msg > li {
+    margin-top: 60px;
+    height: auto;
+  }
+
+  #legends_top {
+    height: 300px !important;
+  }
+
+  #legends_top i {
+    display: none;
+  }
+
+  .top_name, .top_percent {
+    display: none !important;
+  }
+
+  #legends_top > ul > li > ul > li {
+    height: 60px !important;
+  }
+
+  .top_title span {
+    margin-top: 60px!important;
+    margin-left: 0;
+    color: #787878;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+  }
 }

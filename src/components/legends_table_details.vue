@@ -1,6 +1,6 @@
 <template>
-  <div id="legends_table_details">
-    <table class="container">
+  <div id="legends_table_details"  class="container">
+    <table class="container-flued">
       <tr v-for="(value,index) in message" v-show="turn(index)">
         <td class="col-2 text-center"><span>{{index+1}}</span></td>
         <td class="col-2 text-center">{{value.l_title}}</td>
@@ -72,6 +72,7 @@
     font-weight: bold;
     font-size: 14px;
     border-bottom: 1px solid #1c1c1c;
+    overflow: hidden;
   }
 
   #legends_table_details span {

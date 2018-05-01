@@ -162,4 +162,15 @@
     background: #262626;
     border-top: 3px solid #d0b159;
   }
+
+  @media (max-width: 768px) {
+    #team_table_btn > span > img {
+      display: none;
+    }
+    #team_table_btn>span{
+      padding-top: 0!important;
+      height: 60px!important;
+      line-height: 20px!important;
+    }
+  }
 </style>

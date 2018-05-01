@@ -40,7 +40,8 @@
       <br/>
       排眼
     </span>
-    <span class="text-center" v-on:click="change('teamfight')" v-bind:class="{legends_table_btn_click:button.teamfight}">
+    <span class="text-center" v-on:click="change('teamfight')"
+          v-bind:class="{legends_table_btn_click:button.teamfight}">
       <img src="../../static/img/teamfight.png" alt="">
       <br/>
       参团率
@@ -108,7 +109,7 @@
           this.button.killeyes = false;
           this.button.teamfight = false;
           this.button.MVP = false;
-        }else if (index == 'kda') {
+        } else if (index == 'kda') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -119,7 +120,7 @@
           this.button.killeyes = false;
           this.button.teamfight = false;
           this.button.MVP = false;
-        }else if (index == 'money') {
+        } else if (index == 'money') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -130,7 +131,7 @@
           this.button.killeyes = false;
           this.button.teamfight = false;
           this.button.MVP = false;
-        }else if (index == 'CS') {
+        } else if (index == 'CS') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -141,7 +142,7 @@
           this.button.killeyes = false;
           this.button.teamfight = false;
           this.button.MVP = false;
-        }else if (index == 'eyes') {
+        } else if (index == 'eyes') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -152,7 +153,7 @@
           this.button.killeyes = false;
           this.button.teamfight = false;
           this.button.MVP = false;
-        }else if (index == 'killeyes') {
+        } else if (index == 'killeyes') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -163,7 +164,7 @@
           this.button.killeyes = true;
           this.button.teamfight = false;
           this.button.MVP = false;
-        }else if (index == 'teamfight') {
+        } else if (index == 'teamfight') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -174,7 +175,7 @@
           this.button.killeyes = false;
           this.button.teamfight = true;
           this.button.MVP = false;
-        }else if (index == 'MVP') {
+        } else if (index == 'MVP') {
           this.button.kill = false;
           this.button.death = false;
           this.button.assist = false;
@@ -219,5 +220,17 @@
   .legends_table_btn_click {
     background: #262626;
     border-top: 3px solid #d0b159;
+  }
+
+  @media (max-width: 768px) {
+    #player_table_btn > span {
+      height: 60px;
+      padding-top: 0 !important;
+      line-height: 20px;
+    }
+
+    #player_table_btn > span > img {
+      display: none;
+    }
   }
 </style>

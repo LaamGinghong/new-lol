@@ -22,4 +22,10 @@
     color: #ded5c3;
     margin-top: 80px;
   }
+
+  @media (max-width: 768px) {
+    #player_table_title > span {
+      margin-top: 0;
+    }
+  }
 </style>

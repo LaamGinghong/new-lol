@@ -1,6 +1,6 @@
 <template>
-  <div id="team_table_details">
-    <table class="container">
+  <div id="team_table_details"  class="container">
+    <table class="container-flued">
       <tr v-for="(value,index) in message">
         <td class="col-1 text-center"><span>{{index+1}}</span></td>
         <td class="col-1 text-center">{{value.l_shortname}}</td>
@@ -40,6 +40,7 @@
     font-weight: bold;
     font-size: 14px;
     border-bottom: 1px solid #1c1c1c;
+    overflow: auto;
   }
 
   #team_table_details span {

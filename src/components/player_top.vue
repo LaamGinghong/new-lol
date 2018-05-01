@@ -46,6 +46,7 @@
 
 <style>
   @import url(../assets/App.css);
+
   #player_top li {
     position: relative;
     float: left;
@@ -75,5 +76,23 @@
     height: 211px;
     left: 0;
     top: -24px;
+  }
+
+  @media (max-width: 768px) {
+    #player_top {
+      height: 300px !important;
+    }
+
+    #player_top i {
+      display: none;
+    }
+
+    #player_top img {
+      margin-right: 0 !important;
+    }
+
+    #player_top > ul > li > ul > li {
+      height: 60px!important;
+    }
   }
 </style>
