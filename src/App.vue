@@ -1,8 +1,10 @@
 <template>
   <div id="app" v-on:click="hide()">
-    <div id="nav">
+    <div id="nav" style="position: relative">
       <nav class="container">
         <left v-bind:message="drop" v-on:status="show"></left>
+        <right></right>
+        <login></login>
       </nav>
     </div>
     <router-view></router-view>
@@ -11,12 +13,12 @@
 
 <script>
   import left from '@/components/nav_left';
+  import right from '@/components/nav_right';
+  import login from '@/component/nav_login';
 
   export default {
     name: 'App',
-    components: {
-      left
-    },
+    components: {left, right, login},
     data() {
       return {
         drop: false
