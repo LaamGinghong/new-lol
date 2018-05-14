@@ -1,7 +1,7 @@
 <template>
-    <div id="login">
-        <div id="login-box">
-            <h2>登陆</h2>
+  <div id="regeist">
+        <div id="regeist-box">
+            <h2>注册</h2>
         <table>
             <tr>
                 <td>账号</td>
@@ -19,17 +19,17 @@
                     <i class="fa fa-window-close no" v-show="no.password"></i>
                 </td>
             </tr>
-            <!-- <tr>
+            <tr>
                 <td>确认密码</td>
                 <td>
                     <input type="password" name="userpasswordAgain" id="userpasswordAgain" placeholder="请在输入密码" v-model.lazy.trim="passwordAgain">
                     <i class="fa fa-check-square yes" v-show="yes.passwordAgain"></i>     
                     <i class="fa fa-window-close no" v-show="no.passwordAgain"></i>
                 </td>
-            </tr> -->
+            </tr>
         </table>
         <div id="btn">
-        <button v-on:click="login()">登陆</button>            
+        <button v-on:click="regeist()">注册</button>            
         </div>
         <div id="close" v-on:click="closeLogin()"><i class="fa fa-close"></i></div>
         </div>
@@ -37,25 +37,23 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
-  name: "login",
+  name: "regeist",
   data() {
     return {
       yes: {
         name: false,
-        password: false
-        // passwordAgain: false
+        password: false,
+        passwordAgain: false
       },
       no: {
         name: false,
-        password: false
-        // passwordAgain: false
+        password: false,
+        passwordAgain: false
       },
       username: "",
-      password: ""
-      //   passwordAgain: ""
+      password: "",
+      passwordAgain: ""
     };
   },
   methods: {
@@ -73,34 +71,15 @@ export default {
         this.no.password = true;
       }
     },
-    // checkUserPasswordAgain(val) {
-    //   if (val === this.password) {
-    //     this.yes.passwordAgain = true;
-    //   } else {
-    //     this.no.passwordAgain = true;
-    //   }
-    // },
-    closeLogin() {
-      this.$emit("closeLoginBox", false);
-    },
-    login() {
-      if (this.yes.name && this.yes.password) {
-        axios
-          .post("http://39.108.118.110/login", {
-            name: this.username,
-            password: this.password
-          })
-          .then(function(res) {
-            console.log(res);
-          })
-          .catch(function(err) {
-            console.error(err);
-          });
+    checkUserPasswordAgain(val) {
+      if (val === this.password) {
+        this.yes.passwordAgain = true;
       } else {
-        alert("账号或密码错误，请重新输入");
-        this.username = "";
-        this.password = "";
+        this.no.passwordAgain = true;
       }
+    },
+    closeLogin() {
+      this.$emit("closeRegeistBox", false);
     }
   },
   watch: {
@@ -111,18 +90,18 @@ export default {
     password: function(value) {
       this.password = value;
       this.checkUserPassword(value);
+    },
+    passwordAgain: function(value) {
+      this.passwordAgain = value;
+      this.checkUserPasswordAgain(value);
     }
-    // passwordAgain: function(value) {
-    //   this.passwordAgain = value;
-    //   this.checkUserPasswordAgain(value);
-    // }
   }
 };
 </script>
 
 <style>
 @import url(../assets/font-awesome-4.7.0/css/font-awesome.css);
-#login {
+#regeist {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.6);
@@ -130,7 +109,7 @@ export default {
   left: 0;
   top: 50px;
 }
-#login-box {
+#regeist-box {
   width: 60vw;
   margin: 200px auto;
   background: #fff;
@@ -138,23 +117,23 @@ export default {
   padding: 20px 0;
   position: relative;
 }
-#login-box h2 {
+#regeist-box h2 {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
 }
-#login table {
+#regeist table {
   width: 70%;
   margin: 10px auto;
 }
-#login-box td {
+#regeist-box td {
   text-align: left;
   padding: 5px 10px;
   width: 50%;
   height: 40px;
   position: relative;
 }
-#login-box input {
+#regeist-box input {
   width: 180px;
 }
 #close {
@@ -167,7 +146,7 @@ export default {
 #close:hover {
   color: #999;
 }
-#login-box td i {
+#regeist-box td i {
   position: absolute;
   right: 150px;
   top: 18px;
@@ -183,7 +162,7 @@ export default {
   height: 50px;
   margin: 0 auto;
 }
-#login-box button {
+#regeist-box button {
   width: 100%;
   height: 100%;
   border-radius: 8px;
@@ -191,3 +170,4 @@ export default {
   font-size: 24px;
 }
 </style>
+

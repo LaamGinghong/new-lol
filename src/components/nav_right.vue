@@ -4,8 +4,8 @@
       <span>{{userName}}</span>
     </div>
     <div id="noLogin" v-else>
-      <span>登陆</span>
-      <span>注册</span>
+      <span v-on:click="login()">登陆</span>
+      <span v-on:click="register()">注册</span>
     </div>
   </div>
 </template>
@@ -28,6 +28,12 @@
         if (this.userName) {
           this.isLogin = true;
         }
+      },
+      login(){
+        this.$emit('openLoginBox',true);
+      },
+      register(){
+        this.$emit('openRegisterBox',true);
       }
     }
   }
