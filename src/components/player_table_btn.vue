@@ -1,53 +1,53 @@
 <template>
   <div id="player_table_btn" class="container">
     <span class="text-center" v-on:click="change('kill')" v-bind:class="{legends_table_btn_click:button.kill}">
-      <img src="./static/img/kill.png">
+      <img src="/static/img/kill.png">
       <br/>
       击杀
     </span>
     <span class="text-center" v-on:click="change('death')" v-bind:class="{legends_table_btn_click:button.death}">
-      <img src="./static/img/death.png" alt="">
+      <img src="/static/img/death.png" alt="">
       <br/>
       死亡
     </span>
     <span class="text-center" v-on:click="change('assist')" v-bind:class="{legends_table_btn_click:button.assist}">
-      <img src="./static/img/assist.png">
+      <img src="/static/img/assist.png">
       <br/>
       助攻
     </span>
     <span class="text-center" v-on:click="change('kda')" v-bind:class="{legends_table_btn_click:button.kda}">
-      <img src="./static/img/kda.png" alt="">
+      <img src="/static/img/kda.png" alt="">
       <br/>
       KDA
     </span>
     <span class="text-center" v-on:click="change('money')" v-bind:class="{legends_table_btn_click:button.money}">
-      <img src="./static/img/moneys.png" alt="">
+      <img src="/static/img/moneys.png" alt="">
       <br/>
       经济
     </span>
     <span class="text-center" v-on:click="change('CS')" v-bind:class="{legends_table_btn_click:button.CS}">
-      <img src="../../static/img/CS.png" alt="">
+      <img src="/static/img/CS.png" alt="">
       <br/>
       补刀
     </span>
     <span class="text-center" v-on:click="change('eyes')" v-bind:class="{legends_table_btn_click:button.eyes}">
-      <img src="../static/img/eyes.png" alt="">
+      <img src="/static/img/eyes.png" alt="">
       <br/>
       插眼
     </span>
     <span class="text-center" v-on:click="change('killeyes')" v-bind:class="{legends_table_btn_click:button.killeyes}">
-      <img src="./static/img/killeyes.png" alt="">
+      <img src="/static/img/killeyes.png" alt="">
       <br/>
       排眼
     </span>
     <span class="text-center" v-on:click="change('teamfight')"
           v-bind:class="{legends_table_btn_click:button.teamfight}">
-      <img src="./static/img/teamfight.png" alt="">
+      <img src="/static/img/teamfight.png" alt="">
       <br/>
       参团率
     </span>
     <span class="text-center" v-on:click="change('MVP')" v-bind:class="{legends_table_btn_click:button.MVP}">
-      <img src="./static/img/MVP.png" alt="">
+      <img src="/static/img/MVP.png" alt="">
       <br/>
       MVP
     </span>

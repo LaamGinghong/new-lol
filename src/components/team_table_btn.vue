@@ -1,35 +1,35 @@
 <template>
   <div id="team_table_btn" class="container">
     <span class="text-center" v-on:click="change('win')" v-bind:class="{legends_table_btn_click:button.win}">
-      <img src="./static/img/WIN.png">
+      <img src="/static/img/WIN.png">
       <br/>胜率
     </span>
     <span class="text-center" v-on:click="change('kill')" v-bind:class="{legends_table_btn_click:button.kill}">
-      <img src="./static/img/kill.png">
+      <img src="/static/img/kill.png">
       <br/>击杀
     </span>
     <span class="text-center" v-on:click="change('death')" v-bind:class="{legends_table_btn_click:button.death}">
-      <img src="./static/img/death.png">
+      <img src="/static/img/death.png">
       <br/>死亡
     </span>
     <span class="text-center" v-on:click="change('eyes')" v-bind:class="{legends_table_btn_click:button.eyes}">
-      <img src="./static/img/eyes.png">
+      <img src="/static/img/eyes.png">
       <br/>插眼
     </span>
     <span class="text-center" v-on:click="change('killeyes')" v-bind:class="{legends_table_btn_click:button.killeyes}">
-      <img src="./static/img/killeyes.png">
+      <img src="/static/img/killeyes.png">
       <br/>排眼
     </span>
     <span class="text-center" v-on:click="change('money')" v-bind:class="{legends_table_btn_click:button.money}">
-      <img src="./static/img/moneys.png">
+      <img src="/static/img/moneys.png">
       <br/>经济
     </span>
     <span class="text-center" v-on:click="change('dragon')" v-bind:class="{legends_table_btn_click:button.dragon}">
-      <img src="./static/img/dragons.png">
+      <img src="/static/img/dragons.png">
       <br/>小龙
     </span>
     <span class="text-center" v-on:click="change('baron')" v-bind:class="{legends_table_btn_click:button.baron}">
-      <img src="./static/img/barons.png">
+      <img src="/static/img/barons.png">
       <br/>大龙
     </span>
   </div>

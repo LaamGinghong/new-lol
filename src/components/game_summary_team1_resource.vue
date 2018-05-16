@@ -2,7 +2,7 @@
   <div id="game_summary_team1_resource">
     <ul>
       <li class="col-2 text-right" style="margin-left: 4.15555555555%;margin-top: 30px;height: 55px">
-        <img v-bind:src="'static/'+message.rg_team1+'/'+message.rg_team1+'.png'" width="55px">
+        <img v-bind:src="'/static/'+message.rg_team1+'/'+message.rg_team1+'.png'" width="55px">
       </li>
       <li class="col-9 text-left" style="margin-top: 30px"><span
         class="game_summary_team">{{message.rg_team1}}</span></li>
@@ -15,16 +15,16 @@
     </ul>
     <ul>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="static/img/baron.png" alt="大龙数">{{message.rg_team1_barons}}
+        <img src="/static/img/baron.png" alt="大龙数">{{message.rg_team1_barons}}
       </li>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="static/img/dragon.png" alt="小龙数">{{message.rg_team1_dragons}}
+        <img src="/static/img/dragon.png" alt="小龙数">{{message.rg_team1_dragons}}
       </li>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="static/img/tower.png" alt="防御塔">{{message.rg_team1_towers}}
+        <img src="/static/img/tower.png" alt="防御塔">{{message.rg_team1_towers}}
       </li>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="static/img/money.png" alt="经济">{{message.rg_team1_earn}}
+        <img src="/static/img/money.png" alt="经济">{{message.rg_team1_earn}}
       </li>
     </ul>
     <ul>
