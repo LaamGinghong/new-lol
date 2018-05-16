@@ -24,7 +24,7 @@
     },
     created() {
       const vm = this;
-      axios.get('http://39.108.118.110/players')
+      axios.get('http://39.108.118.110/player')
         .then(function (data) {
           vm.players = data.data.data;
           vm.kill_most = vm.players.sort(vm.compare('p_kill'))[0];

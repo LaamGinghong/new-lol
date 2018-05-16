@@ -33,7 +33,7 @@
     },
     created() {
       let vm = this;
-      axios.get('http://39.108.118.110/teamschedule?team_id1=' + this.$route.params.id + '&team_id2=' + this.$route.params.id)
+      axios.get('http://39.108.118.110/team_schedule?team_id1=' + this.$route.params.id + '&team_id2=' + this.$route.params.id)
         .then(function (data) {
           vm.msg = data.data.data;
         })

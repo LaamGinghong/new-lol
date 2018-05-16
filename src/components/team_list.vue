@@ -1,3 +1,4 @@
+<script src="../../../../../Documents/NetSarang/Xftp/Temporary/app.js"></script>
 <template>
 	<div id="team_list" class="container">
 		<team_list_item v-for="values in msg" v-bind:message="values" v-bind:key="values.g_id"></team_list_item>
@@ -17,7 +18,7 @@
 		},
 		created(){
 			let vm=this;
-			axios.get('http://39.108.118.110/team')
+			axios.get('http://39.108.118.110/team_list')
 				 .then(function  (data) {
 				 	vm.msg=data.data.data;
 				 })

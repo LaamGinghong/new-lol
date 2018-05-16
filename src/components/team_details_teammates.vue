@@ -23,7 +23,7 @@
 		},
 		created(){
 			let vm=this;
-			axios.get('http://39.108.118.110/teammembers?team_id='+this.$route.params.id)
+			axios.get('http://39.108.118.110/team_members?team_id='+this.$route.params.id)
 				 .then(function  (data) {
 				 	vm.teammate=data.data.data;
 				 })

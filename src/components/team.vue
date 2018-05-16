@@ -24,7 +24,7 @@
     },
     created() {
       const vm = this;
-      axios.get('http://39.108.118.110/team')
+      axios.get('http://39.108.118.110/team_list')
         .then(function (data) {
           vm.teams = data.data.data;
           vm.win = vm.teams.sort(vm.compare('l_win_percent'))[0];
