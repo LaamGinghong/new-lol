@@ -78,20 +78,16 @@ export default {
           .catch(function(err) {
             console.error(err);
           });
-      } else {
-        alert("账号或密码错误，请重新输入");
-        this.username = "";
-        this.password = "";
+      }else{
+        alert('请正确填写所有信息！');
       }
     }
   },
   watch: {
     username: function(value) {
-      this.username = value;
       this.checkUserName(value);
     },
     password: function(value) {
-      this.password = value;
       this.checkUserPassword(value);
     }
   }
@@ -107,6 +103,7 @@ export default {
   position: absolute;
   left: 0;
   top: 50px;
+  z-index:100;
 }
 #login-box {
   width: 60vw;

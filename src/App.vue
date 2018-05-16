@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-on:click="hide()" v-bind:style="isOpenLoginBox()">
+  <div id="app" v-on:click="hide()" v-bind:style="isOpenBox()">
     <div id="nav" style="position: relative">
       <nav class="container">
         <left v-bind:message="drop" v-on:status="show"></left>
@@ -41,8 +41,12 @@ export default {
     openRegisterBox(e) {
       this.registerBox = e;
     },
-    isOpenLoginBox() {
-      return "overflow:" + (this.loginBox ? "hidden" : "auto");
+    isOpenBox() {
+      if(this.loginBox || this.registerBox){
+        return "overflow:hidden";
+      }else{
+        return "overflow:auto";
+      }
     },
     closeLoginBox(e) {
       this.loginBox = e;

@@ -22,11 +22,21 @@
             <tr>
                 <td>确认密码</td>
                 <td>
-                    <input type="password" placeholder="请在输入密码" v-model.lazy.trim="passwordAgain">
+                    <input type="password" placeholder="请再输入密码" v-model.lazy.trim="passwordAgain">
                     <i class="fa fa-check-square yes" v-show="yes.passwordAgain"></i>     
                     <i class="fa fa-window-close no" v-show="no.passwordAgain"></i>
                 </td>
             </tr>
+            <tr>
+                <td>角色</td>
+                <td>
+                  <select v-model.lazy.trim="role">
+                    <option value="观众">观众</option>                  
+                    <option value="选手">选手</option>
+                    <option value="教练">教练</option>
+                  </select>
+                </td>
+            </tr> 
         </table>
         <div id="btn">
         <button v-on:click="regeist()">注册</button>            
@@ -37,6 +47,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 export default {
   name: "regeist",
   data() {
@@ -53,7 +65,8 @@ export default {
       },
       username: "",
       password: "",
-      passwordAgain: ""
+      passwordAgain: "",
+      role:'观众'
     };
   },
   methods: {
@@ -80,19 +93,33 @@ export default {
     },
     closeLogin() {
       this.$emit("closeRegeistBox", false);
+    },
+    regeist(){
+      if(this.username&&this.password&&this.passwordAgain&&this.role){
+        axios.post('http://39.108.118.110/register',{
+        name:this.username,
+        password:this.password,
+        role:this.role
+      })
+      .then(function(res){
+        console.log(res);
+      })
+      .catch(function(err){
+        console.error(err);
+      })
+    }else{
+              alert('请正确填写所有信息！');
     }
+      }
   },
   watch: {
     username: function(value) {
-      this.username = value;
       this.checkUserName(value);
     },
     password: function(value) {
-      this.password = value;
       this.checkUserPassword(value);
     },
     passwordAgain: function(value) {
-      this.passwordAgain = value;
       this.checkUserPasswordAgain(value);
     }
   }
@@ -108,6 +135,7 @@ export default {
   position: absolute;
   left: 0;
   top: 50px;
+  z-index:100;
 }
 #regeist-box {
   width: 60vw;
