@@ -325,7 +325,7 @@ a:visited {
 }
 
 .grade_details_rank {
-  background: url(/static/img/spr-2018.png) no-repeat 50%;
+  background: url(../img/spr-2018.png) no-repeat 50%;
 }
 
 .grade_details_logo {
@@ -398,7 +398,7 @@ a:visited {
 }
 
 #team_details_summary {
-  background: url(/static/img/team_banner-bg.jpg);
+  background: url(../img/team_banner-bg.jpg);
   height: 521px;
 }
 
@@ -612,7 +612,7 @@ a:visited {
 }
 
 #teammate_details_summary {
-  background: url("/static/img/team_banner-bg.jpg");
+  background: url("../img/team_banner-bg.jpg");
   height: 521px;
 }
 
@@ -885,7 +885,7 @@ a:visited {
 }
 
 #game {
-  background: url("/static/img/data_bg.jpg");
+  background: url("../img/data_bg.jpg");
   clear: both;
   height: 1800px;
 }
@@ -973,7 +973,7 @@ a:visited {
 }
 
 #legends_top i {
-  background: url("../../static/img/border.png");
+  background: url("../img/border.png");
   display: inline-block;
   position: absolute;
   width: 156px;
@@ -987,7 +987,7 @@ a:visited {
   color: #666666;
   margin-bottom: 10px;
   font-size: 14px;
-  background: url("../../static/img/teamBorder.png");
+  background: url("../img/teamBorder.png");
   display: block;
   height: 31px;
   line-height: 31px;

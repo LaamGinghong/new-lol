@@ -5,7 +5,7 @@
         <span class="game_summary_team">{{message.rg_team2}}</span>
       </li>
       <li class="col-2 text-left" style="margin-top: 30px">
-        <img v-bind:src="'/static/'+message.rg_team2+'/'+message.rg_team2+'.png'" width="55px">
+        <img v-bind:src="'static/'+message.rg_team2+'/'+message.rg_team2+'.png'" width="55px">
       </li>
     </ul>
     <ul>
@@ -16,16 +16,16 @@
     </ul>
     <ul>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="/static/img/money.png" alt="经济">{{message.rg_team2_earn}}
+        <img src="static/img/money.png" alt="经济">{{message.rg_team2_earn}}
       </li>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="/static/img/tower.png" alt="防御塔">{{message.rg_team2_towers}}
+        <img src="static/img/tower.png" alt="防御塔">{{message.rg_team2_towers}}
       </li>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="/static/img/dragon.png" alt="小龙数">{{message.rg_team2_dragons}}
+        <img src="static/img/dragon.png" alt="小龙数">{{message.rg_team2_dragons}}
       </li>
       <li class="text-center col-3 game_summary_resource_item">
-        <img src="/static/img/baron.png" alt="大龙数">{{message.rg_team2_barons}}
+        <img src="static/img/baron.png" alt="大龙数">{{message.rg_team2_barons}}
       </li>
     </ul>
     <ul>

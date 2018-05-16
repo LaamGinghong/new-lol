@@ -1,7 +1,7 @@
 <template>
   <div id="game_score" style="width: 941px;margin: 0 auto;padding-top: 80px">
     <span class="text-center game_score_team">
-      <img v-bind:src="'/static/'+message.s_team1+'/'+message.s_team1+'.png'" width="130px">
+      <img v-bind:src="'static/'+message.s_team1+'/'+message.s_team1+'.png'" width="130px">
       <br/>
       {{message.s_team1}}
     </span>
@@ -13,7 +13,7 @@
       <span class="text-center game_score_item game_score_status">{{message.s_status}}</span>
     </span>
     <span class="text-center game_score_team">
-      <img v-bind:src="'/static/'+message.s_team2+'/'+message.s_team2+'.png'" width="130px">
+      <img v-bind:src="'static/'+message.s_team2+'/'+message.s_team2+'.png'" width="130px">
       <br/>
       {{message.s_team2}}
     </span>

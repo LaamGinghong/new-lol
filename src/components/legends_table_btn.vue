@@ -1,15 +1,15 @@
 <template>
   <div id="legends_table_btn" class="container">
       <span class="col-4 text-center" v-on:click="change('pick')" v-bind:class="{legends_table_btn_click:button.pick}">
-        <img src="../../static/img/PICK.png">
+        <img src="./static/img/PICK.png">
         <br/>PICK
       </span>
     <span class="col-4 text-center" v-on:click="change('ban')" v-bind:class="{legends_table_btn_click:button.ban}">
-        <img src="../../static/img/BAN.png">
+        <img src="./static/img/BAN.png">
         <br/>BAN
       </span>
     <span class="col-4 text-center" v-on:click="change('win')" v-bind:class="{legends_table_btn_click:button.win}">
-        <img src="../../static/img/WIN.png">
+        <img src="./static/img/WIN.png">
         <br/>胜率
       </span>
   </div>

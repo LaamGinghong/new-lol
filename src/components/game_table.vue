@@ -14,11 +14,11 @@
     </ul>
     <game_table_item v-bind:msg="message"></game_table_item>
     <ul style="clear: both;position: absolute;top: 80px;left: 50%;margin-left: -17px">
-      <li class="game_table_icon"><img src="/static/img/top.png" alt="上单"></li>
-      <li class="game_table_icon"><img src="/static/img/jungle.png" alt="打野"></li>
-      <li class="game_table_icon"><img src="/static/img/mid.png" alt="中单"></li>
-      <li class="game_table_icon"><img src="/static/img/ADC.png" alt="ADC"></li>
-      <li class="game_table_icon"><img src="/static/img/support.png" alt="辅助"></li>
+      <li class="game_table_icon"><img src="static/img/top.png" alt="上单"></li>
+      <li class="game_table_icon"><img src="static/img/jungle.png" alt="打野"></li>
+      <li class="game_table_icon"><img src="static/img/mid.png" alt="中单"></li>
+      <li class="game_table_icon"><img src="static/img/ADC.png" alt="ADC"></li>
+      <li class="game_table_icon"><img src="static/img/support.png" alt="辅助"></li>
     </ul>
   </div>
 </template>
