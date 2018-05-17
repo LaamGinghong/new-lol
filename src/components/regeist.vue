@@ -102,15 +102,17 @@ export default {
         role:this.role
       })
       .then(function(res){
+        localStorage.setItem('_userName',this.username);
+        location.reload();
         console.log(res);
       })
       .catch(function(err){
         console.error(err);
       })
     }else{
-              alert('请正确填写所有信息！');
+      alert('请正确填写所有信息！');
     }
-      }
+    }
   },
   watch: {
     username: function(value) {

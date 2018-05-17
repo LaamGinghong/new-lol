@@ -1,6 +1,6 @@
 <template>
   <div id="nav_right">
-    <div id="isLogin" v-if="isLogin">
+    <div id="isLogin" v-if="isLogin" v-on:click="logout()">
       <span>{{userName}}</span>
     </div>
     <div id="noLogin" v-else>
@@ -34,6 +34,10 @@
       },
       register(){
         this.$emit('openRegisterBox',true);
+      },
+      logout(){
+        this.isLogin=false;
+        localStorage.removeItem('_userName');
       }
     }
   }
@@ -57,5 +61,14 @@
   #noLogin span:hover{
     background: red;
     color: #FFFFFF;
+  }
+  #isLogin{
+    float:right;
+    cursor:pointer;
+    padding:0 15px;
+    font-weight:500;
+  }
+  #isLogin:hover{
+    color:#FFFFFF;
   }
 </style>

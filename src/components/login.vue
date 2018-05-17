@@ -73,6 +73,8 @@ export default {
             password: this.password
           })
           .then(function(res) {
+            localStorage.setItem('_userName',res.data.data[0].user_name);
+            location.reload();
             console.log(res);
           })
           .catch(function(err) {
